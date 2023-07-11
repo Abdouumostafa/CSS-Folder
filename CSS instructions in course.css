@@ -1,0 +1,640 @@
+/* selector OR .selector {
+    property1: value;
+    property2: value;
+}
+*/
+/* 
+We can use:
+External style = CSS folder
+internal style = <style></style> HTML folder
+inline style   = <p style=""></p> HTML folder
++ picture to konw how to write selectors like professional
+*/
+/* 
+{ background-color:
+    1-color name = Red
+    2-rgb (255 255 255) = red green blue
+    3-color hex code
+    + you can use HTML color hex codes
+    background-image: url
+*/
+/* 
+body { color: = to make a color for all texts
+*/
+/* 
+Writing styles:
+1- original variable as string = some owesome var
+2- camel case = someAwesomeVar
+3- snake case = some_owesome_var
+4_ kabab case = some-owesome-var
+5- pascal case = SomeAwesomeVar
+6- upper case snake case = SOME_AWESOME_VAR
+*/
+/* 
+background-image: url();
+background-repeat: repeat , no repeat , repeat-x , repeat-y ;
+background-attachment: scroll= make it fixed when we move , fixed= move with us , background-position=left top , left center , left bottom
+                                                                                                      center top , center center , center bottom
+                                                                                                      right top , right center , right bottom
+*/
+/*  
+background-size: cover = to cover all the page , contain= to be fully visible , 100px 200px
+*/
+/* 
+padding =for inside: 10px 20px 10px 25px ,, 10% 20% 30% 40%
+padding-top:
+padding-bottom:
+*/
+/* 
+margin = for outside
+margin-right or left or top or bottom: auto or % or px 
+*/
+/* 
+border-width: px px px px
+border-color: color color color color
+border-style: solid solid solid solid 
+types of border-style= solid dashed dotted double groove hidden inherit intial inset none outset revert ridge unset
+To make summary ,,, border: 10px solid red
+*/
+/* 
+outline = out of border
+outline: 10px solid red
+*/
+/* 
+
+Block <div>
+-Take full width if you do not select the width
+-Add line break
+-Respect padding , margin , height and width 
+
+Inline <span>
+-do not add line break
+-do not respect width and height
+-Respect padding and margin left and right only
+
+Inline-Block
+-Allow elements before and after him
+-Respect padding margin width height
+
+*/
+/* 
+display: none , hide the element and the second element will move to the first place
+visibility: visible= make it appear , hidden = hide the element but th first element will not move to its place
+*/
+/* 
+groubing
+.one,
+.two,
+three{
+}
+*/
+/* 
+Nesting:
+
+div p {
+}
+
+div .special{
+}
+*/
+/* 
+width: px
+min-width: px
+max-width: px
+height: px
+min-height: px
+max-height: px
+width: fit-content = be exactly cover the content
+*/
+/* 
+overflow: hidden , visible , scroll , auto ( lesson 16 el zero)
+overflow-y: 
+overflow-x: 
+*/
+/* 
+text-shhadow: H-shadow(px1) V-shadow(px2) Blur(px3) color(red)
+text-align: right center left
+direction: ltr (left to right) rtl (right to left)
+vertical-align: top middle bottom ( lesson 18 el zero )
+*/
+/* 
+text-decoration: line-through underline overline none  = to remove the underline from links
+text-transform: capitalize=make first letter to be capitl,, ubercase= make all letters capital,,, lowercase=make all letters small
+letter-spacing: px + or - (between letters)
+text-indent: px th space before the text
+line-height: 1.5 or 150% 
+word-spacing: px (between words)
+white-space: normal , nowrap = to make the text continue out of the box 
+word-break: normal , break-all , break-word ( lesson 20 el zero)
+ text-overflow: ellipsis = that their is another text to complete
+ overflow: hidden; to hide the text
+ */
+/* 
+div p { 
+  padding or border-color or anything: inherit; = to inherit the same characteristics of div
+  IT SHOULD BE IN THE SAME DIV
+ */
+/* 
+ font-family: serach about safe web fonts (font.google.com)
+ Copy the link and paste it in HTML file
+ */
+/* 
+font-size: px or larger or smaller
+"Default font for web page is 16px"
+"1em = 20px"
+"100% = typical the same font size"
+"vw = view port width ,, search about it" ,,, 1 =1% from view
+*/
+/* 
+font-style: = the style of the font
+font-variant: small -caps = capital words but in small size ,, uppercase = capital words
+font-weight: 100-900 or normal = to make a bold words
+*/
+/* 
+cursor: pointer = to make the mouse appear that it is a clickable thing 
+"search about its types
+*/
+
+lesson 27 elzero width=100% / no. of divs float: left or right height:px clear: both or right or left=remove the additional spaces
+/* lesson 28 elzero
+if you have 4 products and want to divide them on the padge :
+Content width is: 100%
+we will make 5 spaces between them = 5% "from the content width
+95% available space 
+4 elements = the width is : 95% / 4 = 23.75%
+SO....
+width: 23.75% or calc(95% /4)
+margin-left: 1%
+OR if we will write px: 
+5 spaces 15px = 75px from content width
+100% - 75px = available space
+4 elements = the width is : (100% - 90px) / 5
+width: calc((100% - 75px) / 5)
+marin-left: 15px
+ *هنا بنستخدم البيكسل علشان لما اكبر و اصغر الشاشة المسافات تكون ثابتة* */
+
+/* 
+lesson 29 elzero
+opacity: 1= 100% appear ,, 0,5 0.4 0.3
+*/
+/* 
+lesson 30 elzero >> V.Imp
+TO MOVE ANYTHING
+position: static ;
+top: 10px
+it will not be affected
+position: relative;
+top left right bottom: 10px
+it will be affected
+position: absolute
+position: fixed
+position: sticky
+*/
+/* 
+lesson 31 elzero
+z-index: 20 = layers
+*/
+/* 
+lesson 32 elzero
+list-style-type: very more types
+used for <ul> & <ol>
+if you add background
+list-style-position: outside inside 
+list-style-image: url
+list-style:none 
+PAGE 108 in the book
+*/
+/* 
+lesson 33 elzero
+*Table*
+table{
+    width
+    border
+OR  border-spacing
+    padding
+    background
+}
+*/
+/* 
+lesson 34 & 35 & 36 & 37 & 38 & 41  elzero *VERYYYY IMPORTANT*
+pesudo elements
+WATCH THIS VIDEOS
+*/
+/* 
+lesson 39
+If the browsers do not support the new feature:
+you can write..
+
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+-o-border-radius: 10px;
+-ms-border-radius: 10px;
+border-radius: 10px;
+
+webkit>> chrome, safari, new opera version
+moz>> firefox
+o>> old version of opera
+ms>> Ie, Edge
+
+*VS code addon to add the prefix
+*/
+/* 
+lesson 40
+box-shadow:  0  0  0  0  black  inset
+H-shadow V-shadow Blur Spread Color inset or outsed
+*/
+/* 
+lesson 42 *most important video*
+.selector{
+    transition-duration: 0.5s;
+}
+.selector:hover {
+    margin-left: 30px;
+}
+Search about Animation CSS properties
+*/
+/* 
+lesson 43
+.selector{
+    background-color: blue !important; }
+    to make it most important and most strong
+*/
+/* 
+lesson 44 important to watch it is talking about margin between elements
+*/
+/* 
+lesson 45 Watch It
+:root{
+    --mainColor: blue;
+    --mainPadding: 10px;
+}
+.selector{
+    background-color: var(--mainColor: blue);
+    padding: var(--mainPadding: 10px);
+} 
+If you like to add something
+.selector{
+    background-color: calc(20px + var(--mainColor: blue));
+    padding: calc(20px + var(--mainPadding: 10px));
+} 
+*/
+/* 
+lesson 46
+display: flex
+flex-direction: row *Default value* , row-reverse , column , column-reverse 
+flex-wrap: nowrap , wrap , wrap-reverse
+flex-flow: flex wrap = flex-direction + flex-wrap
+
+*/
+/* 
+lesson 47
+justify-content: space-evenly or space-between or space-around;
+do not forget to use box-sizing
+*/
+
+/* lesson 48
+align-items: stretch & flex-start & flex-end & center = control the item */
+
+/* lesson 49
+align-content: stretch & flex-end & flex-start & space-around & space-between & space-evenly = control the all content */
+
+/* lesson 50
+flex-grow: 0 or more 
+flex-shrink: 0 or more 
+order: 0 or more */
+
+/* 
+lesson 51
+flex-basis: px
+flex-direction: column
+flex: flex-grow flex-shrink flex-basis
+display: inline-flex
+*/
+
+/* 
+lesson 52
+align-self = make the item to move anywhere
+*/
+
+/* 
+FOr flex
+Justify-content
+
+flex-start: Items align to the left side of the container.
+flex-end: Items align to the right side of the container.
+center: Items align at the center of the container.
+space-between: Items display with equal spacing between them.
+space-around: Items display with equal spacing around them.
+
+align-items
+
+flex-start: Items align to the top of the container.
+flex-end: Items align to the bottom of the container.
+center: Items align at the vertical center of the container.
+baseline: Items display at the baseline of the container.
+stretch: Items are stretched to fit the container.
+
+flex-direction
+
+row: Items are placed the same as the text direction.
+row-reverse: Items are placed opposite to the text direction.
+column: Items are placed top to bottom.
+column-reverse: Items are placed bottom to top
+
+Order
+
+ we can apply the order property to individual items. By default, items have a value of 0, but we can use this property to also set it to a positive or negative integer value (-2, -1, 0, 1, 2)
+
+ align-self
+
+ Another property you can apply to individual items is align-self. This property accepts the same values as align-items and its value for the specific item
+
+ flex-wrap
+
+ nowrap: Every item is fit to a single line.
+wrap: Items wrap around to additional lines.
+wrap-reverse: Items wrap around to additional lines in reverse.
+
+flex-flow
+
+The two properties flex-direction and flex-wrap are used so often together that the shorthand property flex-flow was created to combine them. This shorthand property accepts the value of the two properties separated by a space.
+For example, you can use flex-flow: row wrap to set rows and wrap them
+
+align-content
+
+flex-start: Lines are packed at the top of the container.
+flex-end: Lines are packed at the bottom of the container.
+center: Lines are packed at the vertical center of the container.
+space-between: Lines display with equal spacing between them.
+space-around: Lines display with equal spacing around them.
+stretch: Lines are stretched to fit the container.
+*/
+
+/* 
+lessoon 54
+.selector{
+    transition: 0.3s;
+    filter: grayscale(100%);
+            Blur(4px);
+            invert(100%);
+}
+.selector:hover{
+    filter: grayscale(0);
+            Blur(0);
+            invert(0);
+}
+you can search about more
+*/
+
+/* 
+lesson 55 WATCH IT
+
+background-image: linear-gradient(to right or to top or 90deg or 0deg, red 70% or 40px, green)
+*/
+
+/* 
+lesson 56
+<p contenteditable= "true"></p> to enable to edit the text
+caret-color: color or transparent
+pointer-events: auto or none = to cancel any event
+*/
+
+/* 
+lesson 57
+display: grid or inline-grid
+grid-template-columns: px px px or % % % or auto auto auto or repeat(5, auto) or 1fr
+*/
+
+/* 
+lesson 58
+grid-template-rows: the same
+row-gap: px
+column-gap: px
+*/
+
+/* 
+lesson 59 & 60
+WATCH IT
+*/
+
+/* 
+lesson 61
+grid-column: start(1) / end(7) or span 4
+grid-row: .....
+*/
+
+/* 
+lesson 62
+TEMPORARY TO WATCH IT
+    grid-row-start:1;
+    grid-column-end: 5;
+    grid-row-end: 3;
+    grid-column-start:1 
+*/
+
+/* 
+lesson 63
+TEMPORARY TO WATCH IT
+grid-template-columns: repeat(auto-fill, 200px) fill all the page with width 200px for the column
+repeat(auto-fill, minmax(200px, 1fr))
+*/
+
+/* 
+Summary for Grid
+grid-column-start: 3; will water the area starting at the 3rd vertical grid line, which is another way of saying the 3rd vertical border from the left in the grid.
+When grid-column-start is used alone, the grid item by default will span exactly one column. However, you can extend the item across multiple columns by adding the grid-column-end property.
+Instead of defining a grid item based on the start and end positions of the grid lines, you can define it based on your desired column width using the span keyword. Keep in mind that span only works with positive values
+grid-column: 2 / 4; will set the grid item to start on the 2nd vertical grid line and end on the 4th grid line.
+grid-area: 1 / 1 / 3 / 6;
+grid-row-start, grid-column-start, grid-row-end, followed by grid-column-end
+order : negative or positive
+grid-template: 50% 50% / 200px; will create a grid with two rows that are 50% each, and one column that is 200 pixels wide
+*/
+
+/* 
+lesson 65
+transform: scaleX(2)
+transform: scaleY(2)
+transform: scale(1, 1)
+*/
+
+/* 
+lesson 66
+transform: rotate(45deg); OR by negative value
+.selector:hover {
+    transform: scale(1.3) rotate(5deg);
+    opacity: 0.6;
+}
+*/
+
+/* 
+lesson 67
+transform: translate( -or+ , -or+ )
+*/
+
+/*
+lesson 68 
+transform: skew X&Y(20deg, 0deg)
+WATCH IT
+*/
+
+/* 
+lesson 69
+matrix: ( translateX(), translateY(), scaleX(), skewY(), skewX(), scaleY() )
+search about tan of angle to know the degrees
+*/
+
+/* 
+lesson 70
+WATCH ITTTTTT please...
+transform-origin: 50% 50% 0 
+*/
+
+/* 
+lesson 71
+WATCH ITTTTT please...
+*/
+
+/* 
+lesson 72
+transform: translate3d(0, 0, 100px)
+prespective: px = the distance between the element and the parent
+prespective-origin: left top or 50% 50%
+*/
+
+/* 
+lesson 73  *Practice*
+WATCH ITTTTT please...
+backface-visibility: hidden
+transform-style: preserve-3d
+
+We can make an easier thing to write :
+in HTML
+<div class="face front"></div>
+<div class="face back"></div>
+in CSS
+.face{ } to share the same things on them
+.front{ } 
+.back{ }
+
+*/
+
+/* 
+lesson 74 & 75
+Animation, i practiced it and u can watch it
+SEARCH about loading animation css in codepen website
+
+animation-name: the name
+animation-duration: 5s
+animation-iteration-count: 2
+animation-timing-function: linear
+*/
+
+/* 
+lesson 76
+animation-direction: reverse, alternate, alternate-reverse, 
+animation-delay: -2 or 2
+animation-fill-mode: forwards or backwards or both = watch it 9:12:00
+.selector{
+    animation-play-state: running
+}
+.selector:hover{
+    animation-play-state: paused
+}
+*/
+
+/* 
+lesson 77
+loading animation = i practiced it in Double A file
+*/
+
+/* 
+lesson 78
+CSS selectors
+* = to target all elements 
+[ p, div, h2]
+div p
+#id-name
+.parent .child
+.parent > .child = direct child
+.class-one.class-two
+.class-name div
+.class-name div,
+class-name p
+p.class-name = should be paragraph
+*/
+
+/* 
+lesson 79
+div + p
+p ~ div = p plus any divs 
+div[title="any"] = <div title="any">
+[title~="div"] contains a word
+[title*="div"] contains a string
+[title^="div"] start with a string
+*/
+
+/* 
+lesson 80
+p:first-child = select the paragraph which is the first child
+p:last-child = select the paragraph which is the second child
+p:first-of-type = first paragraph inside any container
+p:last-of-type = last paragraph inside any container
+p:only-child = the paragraph which is the only child
+p:only-of-type = the paragraph which have not any paragraph as him as a child
+*/
+
+/* 
+lesson 81
+p:not(:first-child) = to select all paragraphs except the first child
+p:nth-child(3) = the third paragraph in its father
+p:nth-child(even) = the paragraph with even numbers
+p:nth-child(odd) = the paragraph with odd numbers
+div:nth-last-child(2) = the div that the before last child
+div:nth-of-type(3) = the third div
+div:nth-last-of-type(1) = the last div
+*/
+
+/* 
+lesson 82
+watch it
+div:empty = to the empty div 
+*/
+
+/* 
+lesson 83
+@media print{ = in print only for example}
+@media (max-width: 1000px) or (min-width: 1000px) and (max-width: 1000px)
+*/
+
+/* 
+lesson 84 & 85 & 86
+WATCH IT veryyyy important
+*/
+
+/* 
+lesson 87
+display: initial = to make it default and it is important because any browsers are different
+and color: unset = display: initial
+all: unset
+*/
+
+/* 
+lesson 88
+Websites 
+codepen
+ CSS battle
+ front end mentor
+ git and github
+ elzero
+*/
+                                          THE END
+page 75, 108
+
+
+
+
+
+
+
+

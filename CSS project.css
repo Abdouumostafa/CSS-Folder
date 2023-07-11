@@ -1,0 +1,323 @@
+
+.one,
+.two,
+.three {
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 150px;
+    margin-left: 30px;
+    border: 10px solid red;
+    border-width: 10px;
+    outline: 5px solid black;
+    display: inline-block;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.div-one {
+    border: 3px solid blue;
+    width: 400px;
+    background-color: rgb(155, 155, 155);
+    border-radius: 30px;
+    box-shadow: 3px 3px 23px 5px black, 3px 3px 23px 5px blue;
+}
+
+
+.shadow {
+    text-shadow: 1px 2px 3px black;
+    font-size: 30px;
+    text-align: center;
+    direction: rtl;
+    text-decoration: line-through;
+}
+
+.New {
+    font-size: 25px;
+    margin: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    word-spacing: 4px;
+    text-indent: 30px;
+    background-color: rgb(158, 158, 158);
+    width: 240px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: inherit;
+}
+
+.div-two {
+    font-style: oblique;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    width: calc(90%/4);
+    margin-left: 2%;
+    opacity: 60%;
+}
+
+.div-three {
+    background-color: blue;
+    width: 100px;
+    font-size: 32px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+
+}
+
+.div-four {
+    background-color: green;
+    width: 100px;
+    font-size: 32px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 9;
+}
+
+.ol {
+    font-size: 30px;
+    list-style-type: circle;
+}
+
+table {
+    width: 100%;
+    border: 2px solid rgb(168, 168, 168);
+}
+
+table td {
+    padding: 15px;
+    background-color: rgb(168, 168, 168);
+}
+
+table thead td {
+    background-color: #008577;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+
+.ch:checked+label {
+    color: red;
+}
+
+.text {
+    border-color: brown;
+    outline: none;
+}
+
+.text:focus {
+    border-color: blue;
+    outline: none;
+}
+
+.parent {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.Four {
+    background-color: rgb(199, 199, 199);
+    float: left;
+    padding: 10px;
+    width: 600px;
+    position: relative;
+}
+
+.user {
+    background-color: rgb(199, 199, 199);
+    width: 50px;
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    margin-right: 20px;
+    height: 55.5px;
+}
+
+.Four::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    right: -8px;
+    bottom: 0px;
+    background-color: #008577;
+    height: 100%;
+}
+
+/*OR creat <span class="ok"></span>
+ .ok { position: absolute;
+    width: 5px;
+    right: -8px;
+    bottom: 0px;
+    background-color: #008577;
+    height: 100%;} */
+
+.Four::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 50%;
+    left: -16px;
+    margin-top: -13px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #008577;
+}
+
+.box {
+    background-color: #008577;
+    color: white;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    transition-duration: 0.5s;
+    transition-delay: 0.1s;
+    transition-property: all;
+    /* OR margin-left, margin-top */
+    transition-timing-function: linear;
+    /* OR ease, ease-in, ease-out, ease-in-out */
+    /* OR we can make a summary >> transition: width 2s, height 2s OR all 0.5s 2s linear */
+}
+
+.box:hover {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 170px;
+}
+
+.div-0 {
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    margin: auto;
+    background-color: rgb(201, 201, 201);
+}
+
+.div-1 {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(150, 150, 150);
+    float: left;
+}
+
+.div-2 {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(179, 179, 179);
+    float: right;
+}
+
+.div-3 {
+    height: 95px;
+    background-color: red;
+    margin-bottom: 10px;
+}
+
+.div-4 {
+    height: 95px;
+    background-color: green;
+    margin-top: 10px;
+}
+
+.flex {
+    width: 600px;
+    background-color: rgb(201, 201, 201);
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+}
+
+.flex div {
+    width: calc(90% / 3);
+    background-color: #008577;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    /* or margin-left */
+}
+
+.firstly {
+    order: 3;
+}
+
+.center {
+    width: 250px;
+    height: 300px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.basic {
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    position: absolute;
+}
+
+.red {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin: auto;
+    left: 30px;
+    top: 30px;
+    z-index: 4;
+}
+
+.green {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin: auto;
+    left: 20px;
+    top: 20px;
+    z-index: 3;
+}
+
+.blue {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin: auto;
+    left: 10px;
+    top: 10px;
+    z-index: 2;
+}
+
+
+.black {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin: auto;
+    z-index: 1;
+}
+
